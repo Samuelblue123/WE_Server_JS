@@ -19,6 +19,7 @@ export function registerMessageIndex() {
     });
 }
 const processedMessages = new Set();
+console.log(!processedMessages.has(concatMessage));
 const errorHandler = (toHandle) => {
     const handleError = (error) => {
         console.error("socket error:", error);
